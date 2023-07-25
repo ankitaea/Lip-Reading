@@ -1,0 +1,2565 @@
+
+
+0. Install and Import Dependencies
+
+    !pip list
+
+    Package                       Version
+    ----------------------------- --------------------
+    absl-py                       1.4.0
+    aiohttp                       3.8.1
+    aiosignal                     1.2.0
+    alabaster                     0.7.12
+    anaconda-client               1.9.0
+    anaconda-navigator            2.4.0
+    anaconda-project              0.10.2
+    anyio                         3.5.0
+    appdirs                       1.4.4
+    argon2-cffi                   21.3.0
+    argon2-cffi-bindings          21.2.0
+    arrow                         1.2.2
+    astroid                       2.6.6
+    astropy                       5.0.4
+    asttokens                     2.0.5
+    astunparse                    1.6.3
+    async-timeout                 4.0.1
+    atomicwrites                  1.4.0
+    attrs                         21.4.0
+    Automat                       20.2.0
+    autopep8                      1.6.0
+    Babel                         2.9.1
+    backcall                      0.2.0
+    backports.functools-lru-cache 1.6.4
+    backports.tempfile            1.0
+    backports.weakref             1.0.post1
+    bcrypt                        3.2.0
+    beautifulsoup4                4.11.1
+    binaryornot                   0.4.4
+    bitarray                      2.4.1
+    bkcharts                      0.2
+    black                         19.10b0
+    bleach                        4.1.0
+    bokeh                         2.4.2
+    boto3                         1.21.32
+    botocore                      1.24.32
+    Bottleneck                    1.3.4
+    brotlipy                      0.7.0
+    cachetools                    4.2.2
+    certifi                       2021.10.8
+    cffi                          1.15.0
+    chardet                       4.0.0
+    charset-normalizer            2.0.4
+    click                         8.0.4
+    cloudpickle                   2.0.0
+    clyent                        1.2.2
+    cmake                         3.26.3
+    colorama                      0.4.4
+    colorcet                      2.0.6
+    comtypes                      1.1.10
+    conda                         4.14.0
+    conda-build                   3.21.8
+    conda-content-trust           0+unknown
+    conda-pack                    0.6.0
+    conda-package-handling        1.8.1
+    conda-repo-cli                1.0.4
+    conda-token                   0.3.0
+    conda-verify                  3.4.2
+    constantly                    15.1.0
+    cookiecutter                  1.7.3
+    cryptography                  3.4.8
+    cssselect                     1.1.0
+    cycler                        0.11.0
+    Cython                        0.29.28
+    cytoolz                       0.11.0
+    daal4py                       2021.5.0
+    dask                          2022.2.1
+    datashader                    0.13.0
+    datashape                     0.5.4
+    debugpy                       1.5.1
+    decorator                     5.1.1
+    defusedxml                    0.7.1
+    diff-match-patch              20200713
+    distributed                   2022.2.1
+    docutils                      0.17.1
+    entrypoints                   0.4
+    et-xmlfile                    1.1.0
+    executing                     0.8.3
+    fastjsonschema                2.15.1
+    filelock                      3.6.0
+    flake8                        3.9.2
+    Flask                         1.1.2
+    flatbuffers                   23.3.3
+    fonttools                     4.25.0
+    frozenlist                    1.2.0
+    fsspec                        2022.2.0
+    future                        0.18.2
+    gast                          0.4.0
+    gdown                         4.7.1
+    gensim                        4.1.2
+    glob2                         0.7
+    google-api-core               1.25.1
+    google-auth                   2.17.2
+    google-auth-oauthlib          1.0.0
+    google-cloud-core             1.7.1
+    google-cloud-storage          1.31.0
+    google-crc32c                 1.1.2
+    google-pasta                  0.2.0
+    google-resumable-media        1.3.1
+    googleapis-common-protos      1.53.0
+    greenlet                      1.1.1
+    grpcio                        1.53.0
+    h5py                          3.6.0
+    HeapDict                      1.0.1
+    holoviews                     1.14.8
+    hvplot                        0.7.3
+    hyperlink                     21.0.0
+    idna                          3.3
+    imagecodecs                   2021.8.26
+    imageio                       2.9.0
+    imagesize                     1.3.0
+    importlib-metadata            4.11.3
+    incremental                   21.3.0
+    inflection                    0.5.1
+    iniconfig                     1.1.1
+    intake                        0.6.5
+    intervaltree                  3.1.0
+    ipykernel                     6.9.1
+    ipython                       8.2.0
+    ipython-genutils              0.2.0
+    ipywidgets                    7.6.5
+    isort                         5.9.3
+    itemadapter                   0.3.0
+    itemloaders                   1.0.4
+    itsdangerous                  2.0.1
+    jax                           0.4.8
+    jdcal                         1.4.1
+    jedi                          0.18.1
+    Jinja2                        2.11.3
+    jinja2-time                   0.2.0
+    jmespath                      0.10.0
+    joblib                        1.1.0
+    json5                         0.9.6
+    jsonschema                    4.4.0
+    jupyter                       1.0.0
+    jupyter-client                6.1.12
+    jupyter-console               6.4.0
+    jupyter-core                  4.9.2
+    jupyter-server                1.13.5
+    jupyterlab                    3.3.2
+    jupyterlab-pygments           0.1.2
+    jupyterlab-server             2.10.3
+    jupyterlab-widgets            1.0.0
+    keras                         2.12.0
+    keyring                       23.4.0
+    kiwisolver                    1.3.2
+    lazy-object-proxy             1.6.0
+    libarchive-c                  2.9
+    libclang                      16.0.0
+    llvmlite                      0.38.0
+    locket                        0.2.1
+    lxml                          4.8.0
+    Markdown                      3.3.4
+    MarkupSafe                    2.0.1
+    matplotlib                    3.5.1
+    matplotlib-inline             0.1.2
+    mccabe                        0.6.1
+    menuinst                      1.4.18
+    mistune                       0.8.4
+    mkl-fft                       1.3.1
+    mkl-random                    1.2.2
+    mkl-service                   2.4.0
+    ml-dtypes                     0.0.4
+    mock                          4.0.3
+    mpmath                        1.2.1
+    msgpack                       1.0.2
+    multidict                     5.1.0
+    multipledispatch              0.6.0
+    munkres                       1.1.4
+    mypy-extensions               0.4.3
+    navigator-updater             0.2.1
+    nbclassic                     0.3.5
+    nbclient                      0.5.13
+    nbconvert                     6.4.4
+    nbformat                      5.3.0
+    nest-asyncio                  1.5.5
+    networkx                      2.7.1
+    nltk                          3.7
+    nose                          1.3.7
+    notebook                      6.4.8
+    numba                         0.55.1
+    numexpr                       2.8.1
+    numpy                         1.22.4
+    numpydoc                      1.2
+    oauthlib                      3.2.2
+    olefile                       0.46
+    opencv-contrib-python         4.7.0.72
+    opencv-python                 4.7.0.72
+    openpyxl                      3.0.9
+    opt-einsum                    3.3.0
+    packaging                     21.3
+    pandas                        1.4.2
+    pandocfilters                 1.5.0
+    panel                         0.13.0
+    param                         1.12.0
+    paramiko                      2.8.1
+    parsel                        1.6.0
+    parso                         0.8.3
+    partd                         1.2.0
+    pathspec                      0.7.0
+    patsy                         0.5.2
+    pep8                          1.7.1
+    pexpect                       4.8.0
+    pickleshare                   0.7.5
+    Pillow                        9.0.1
+    pip                           21.2.4
+    pkginfo                       1.8.2
+    plotly                        5.6.0
+    pluggy                        1.0.0
+    poyo                          0.5.0
+    prometheus-client             0.13.1
+    prompt-toolkit                3.0.20
+    Protego                       0.1.16
+    protobuf                      4.22.1
+    psutil                        5.8.0
+    ptyprocess                    0.7.0
+    pure-eval                     0.2.2
+    py                            1.11.0
+    pyasn1                        0.4.8
+    pyasn1-modules                0.2.8
+    pycodestyle                   2.7.0
+    pycosat                       0.6.3
+    pycparser                     2.21
+    pyct                          0.4.6
+    pycurl                        7.44.1
+    PyDispatcher                  2.0.5
+    pydocstyle                    6.1.1
+    pyerfa                        2.0.0
+    pyflakes                      2.3.1
+    Pygments                      2.11.2
+    PyHamcrest                    2.0.2
+    PyJWT                         2.1.0
+    pylint                        2.9.6
+    pyls-spyder                   0.4.0
+    PyNaCl                        1.4.0
+    pyodbc                        4.0.32
+    pyOpenSSL                     21.0.0
+    pyparsing                     3.0.4
+    pyreadline                    2.1
+    pyrsistent                    0.18.0
+    PySocks                       1.7.1
+    pytest                        7.1.1
+    python-dateutil               2.8.2
+    python-lsp-black              1.0.0
+    python-lsp-jsonrpc            1.0.0
+    python-lsp-server             1.2.4
+    python-slugify                5.0.2
+    python-snappy                 0.6.0
+    pytz                          2021.3
+    pyviz-comms                   2.0.2
+    PyWavelets                    1.3.0
+    pywin32                       302
+    pywin32-ctypes                0.2.0
+
+    pywinpty                      2.0.2
+    PyYAML                        6.0
+    pyzmq                         22.3.0
+    QDarkStyle                    3.0.2
+    qstylizer                     0.1.10
+    QtAwesome                     1.0.3
+    qtconsole                     5.3.0
+    QtPy                          2.0.1
+    queuelib                      1.5.0
+    regex                         2022.3.15
+    requests                      2.27.1
+    requests-file                 1.5.1
+    requests-oauthlib             1.3.1
+    rope                          0.22.0
+    rsa                           4.7.2
+    Rtree                         0.9.7
+    ruamel-yaml-conda             0.15.100
+    s3transfer                    0.5.0
+    scikit-image                  0.19.2
+    scikit-learn                  1.0.2
+    scikit-learn-intelex          2021.20220215.102710
+    scipy                         1.7.3
+    Scrapy                        2.6.1
+    seaborn                       0.11.2
+    Send2Trash                    1.8.0
+    service-identity              18.1.0
+    setuptools                    61.2.0
+    sip                           4.19.13
+    six                           1.16.0
+    smart-open                    5.1.0
+    sniffio                       1.2.0
+    snowballstemmer               2.2.0
+    sortedcollections             2.1.0
+    sortedcontainers              2.4.0
+    soupsieve                     2.3.1
+    Sphinx                        4.4.0
+    sphinxcontrib-applehelp       1.0.2
+    sphinxcontrib-devhelp         1.0.2
+    sphinxcontrib-htmlhelp        2.0.0
+    sphinxcontrib-jsmath          1.0.1
+    sphinxcontrib-qthelp          1.0.3
+    sphinxcontrib-serializinghtml 1.1.5
+    spyder                        5.1.5
+    spyder-kernels                2.1.3
+    SQLAlchemy                    1.4.32
+    stack-data                    0.2.0
+    statsmodels                   0.13.2
+    sympy                         1.10.1
+    tables                        3.6.1
+    tabulate                      0.8.9
+    TBB                           0.2
+    tblib                         1.7.0
+    tenacity                      8.0.1
+    tensorboard                   2.12.1
+    tensorboard-data-server       0.7.0
+    tensorboard-plugin-wit        1.8.1
+    tensorflow                    2.12.0
+    tensorflow-estimator          2.12.0
+    tensorflow-intel              2.12.0
+    tensorflow-io-gcs-filesystem  0.31.0
+    termcolor                     2.2.0
+    terminado                     0.13.1
+    testpath                      0.5.0
+    text-unidecode                1.3
+    textdistance                  4.2.1
+    threadpoolctl                 2.2.0
+    three-merge                   0.1.1
+    tifffile                      2021.7.2
+    tinycss                       0.4
+    tldextract                    3.2.0
+    toml                          0.10.2
+    tomli                         1.2.2
+    toolz                         0.11.2
+    tornado                       6.1
+    tqdm                          4.64.0
+    traitlets                     5.1.1
+    Twisted                       22.2.0
+    twisted-iocpsupport           1.0.2
+    typed-ast                     1.4.3
+    typing_extensions             4.1.1
+    ujson                         5.1.0
+    Unidecode                     1.2.0
+    urllib3                       1.26.9
+    w3lib                         1.21.0
+    watchdog                      2.1.6
+    wcwidth                       0.2.5
+    webencodings                  0.5.1
+    websocket-client              0.58.0
+    Werkzeug                      2.0.3
+    wheel                         0.37.1
+    widgetsnbextension            3.5.2
+    win-inet-pton                 1.1.0
+    win-unicode-console           0.5
+    wincertstore                  0.2
+    wrapt                         1.12.1
+    xarray                        0.20.1
+    xlrd                          2.0.1
+    XlsxWriter                    3.0.3
+    xlwings                       0.24.9
+    yapf                          0.31.0
+    yarl                          1.6.3
+    zict                          2.0.0
+    zipp                          3.7.0
+    zope.interface                5.4.0
+
+    !pip install opencv-python matplotlib imageio gdown tensorflow
+
+    Defaulting to user installation because normal site-packages is not writeable
+    Requirement already satisfied: opencv-python in c:\users\dell\appdata\roaming\python\python39\site-packages (4.7.0.72)
+    Requirement already satisfied: matplotlib in c:\programdata\anaconda3\lib\site-packages (3.5.1)
+    Requirement already satisfied: imageio in c:\programdata\anaconda3\lib\site-packages (2.9.0)
+    Requirement already satisfied: gdown in c:\users\dell\appdata\roaming\python\python39\site-packages (4.7.1)
+    Requirement already satisfied: tensorflow in c:\users\dell\appdata\roaming\python\python39\site-packages (2.12.0)
+    Requirement already satisfied: numpy>=1.17.3 in c:\users\dell\appdata\roaming\python\python39\site-packages (from opencv-python) (1.22.4)
+    Requirement already satisfied: fonttools>=4.22.0 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (4.25.0)
+    Requirement already satisfied: pillow>=6.2.0 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (9.0.1)
+    Requirement already satisfied: python-dateutil>=2.7 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (2.8.2)
+    Requirement already satisfied: kiwisolver>=1.0.1 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (1.3.2)
+    Requirement already satisfied: cycler>=0.10 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (0.11.0)
+    Requirement already satisfied: pyparsing>=2.2.1 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (3.0.4)
+    Requirement already satisfied: packaging>=20.0 in c:\programdata\anaconda3\lib\site-packages (from matplotlib) (21.3)
+    Requirement already satisfied: beautifulsoup4 in c:\programdata\anaconda3\lib\site-packages (from gdown) (4.11.1)
+    Requirement already satisfied: tqdm in c:\programdata\anaconda3\lib\site-packages (from gdown) (4.64.0)
+    Requirement already satisfied: filelock in c:\programdata\anaconda3\lib\site-packages (from gdown) (3.6.0)
+    Requirement already satisfied: six in c:\programdata\anaconda3\lib\site-packages (from gdown) (1.16.0)
+    Requirement already satisfied: requests[socks] in c:\programdata\anaconda3\lib\site-packages (from gdown) (2.27.1)
+    Requirement already satisfied: tensorflow-intel==2.12.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow) (2.12.0)
+    Requirement already satisfied: tensorboard<2.13,>=2.12 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (2.12.1)
+    Requirement already satisfied: libclang>=13.0.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (16.0.0)
+    Requirement already satisfied: absl-py>=1.0.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (1.4.0)
+    Requirement already satisfied: wrapt<1.15,>=1.11.0 in c:\programdata\anaconda3\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow) (1.12.1)
+    Requirement already satisfied: grpcio<2.0,>=1.24.3 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (1.53.0)
+    Requirement already satisfied: opt-einsum>=2.3.2 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (3.3.0)
+    Requirement already satisfied: jax>=0.3.15 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (0.4.8)
+    Requirement already satisfied: tensorflow-estimator<2.13,>=2.12.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (2.12.0)
+    Requirement already satisfied: typing-extensions>=3.6.6 in c:\programdata\anaconda3\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow) (4.1.1)
+    Requirement already satisfied: tensorflow-io-gcs-filesystem>=0.23.1 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (0.31.0)
+    Requirement already satisfied: gast<=0.4.0,>=0.2.1 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (0.4.0)
+    Requirement already satisfied: keras<2.13,>=2.12.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (2.12.0)
+    Requirement already satisfied: setuptools in c:\programdata\anaconda3\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow) (61.2.0)
+    Requirement already satisfied: google-pasta>=0.1.1 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (0.2.0)
+    Requirement already satisfied: h5py>=2.9.0 in c:\programdata\anaconda3\lib\site-packages (from tensorflow-intel==2.12.0->tensorflow) (3.6.0)
+    Requirement already satisfied: flatbuffers>=2.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (23.3.3)
+    Requirement already satisfied: termcolor>=1.1.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (2.2.0)
+    Requirement already satisfied: astunparse>=1.6.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (1.6.3)
+    Requirement already satisfied: protobuf!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5,<5.0.0dev,>=3.20.3 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorflow-intel==2.12.0->tensorflow) (4.22.1)
+    Requirement already satisfied: wheel<1.0,>=0.23.0 in c:\programdata\anaconda3\lib\site-packages (from astunparse>=1.6.0->tensorflow-intel==2.12.0->tensorflow) (0.37.1)
+    Requirement already satisfied: scipy>=1.7 in c:\programdata\anaconda3\lib\site-packages (from jax>=0.3.15->tensorflow-intel==2.12.0->tensorflow) (1.7.3)
+    Requirement already satisfied: ml-dtypes>=0.0.3 in c:\users\dell\appdata\roaming\python\python39\site-packages (from jax>=0.3.15->tensorflow-intel==2.12.0->tensorflow) (0.0.4)
+    Requirement already satisfied: werkzeug>=1.0.1 in c:\programdata\anaconda3\lib\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (2.0.3)
+    Requirement already satisfied: google-auth-oauthlib<1.1,>=0.5 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (1.0.0)
+    Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (0.7.0)
+    Requirement already satisfied: markdown>=2.6.8 in c:\programdata\anaconda3\lib\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (3.3.4)
+    Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (1.8.1)
+    Requirement already satisfied: google-auth<3,>=1.6.3 in c:\users\dell\appdata\roaming\python\python39\site-packages (from tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (2.17.2)
+    Requirement already satisfied: cachetools<6.0,>=2.0.0 in c:\programdata\anaconda3\lib\site-packages (from google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (4.2.2)
+    Requirement already satisfied: pyasn1-modules>=0.2.1 in c:\programdata\anaconda3\lib\site-packages (from google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (0.2.8)
+    Requirement already satisfied: rsa<5,>=3.1.4 in c:\programdata\anaconda3\lib\site-packages (from google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (4.7.2)
+    Requirement already satisfied: requests-oauthlib>=0.7.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from google-auth-oauthlib<1.1,>=0.5->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (1.3.1)
+    Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in c:\programdata\anaconda3\lib\site-packages (from pyasn1-modules>=0.2.1->google-auth<3,>=1.6.3->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (0.4.8)
+    Requirement already satisfied: idna<4,>=2.5 in c:\programdata\anaconda3\lib\site-packages (from requests[socks]->gdown) (3.3)
+    Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\programdata\anaconda3\lib\site-packages (from requests[socks]->gdown) (1.26.9)
+    Requirement already satisfied: certifi>=2017.4.17 in c:\programdata\anaconda3\lib\site-packages (from requests[socks]->gdown) (2021.10.8)
+    Requirement already satisfied: charset-normalizer~=2.0.0 in c:\programdata\anaconda3\lib\site-packages (from requests[socks]->gdown) (2.0.4)
+    Requirement already satisfied: oauthlib>=3.0.0 in c:\users\dell\appdata\roaming\python\python39\site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<1.1,>=0.5->tensorboard<2.13,>=2.12->tensorflow-intel==2.12.0->tensorflow) (3.2.2)
+    Requirement already satisfied: soupsieve>1.2 in c:\programdata\anaconda3\lib\site-packages (from beautifulsoup4->gdown) (2.3.1)
+    Requirement already satisfied: PySocks!=1.5.7,>=1.5.6 in c:\programdata\anaconda3\lib\site-packages (from requests[socks]->gdown) (1.7.1)
+    Requirement already satisfied: colorama in c:\programdata\anaconda3\lib\site-packages (from tqdm->gdown) (0.4.4)
+
+    import os
+    import cv2
+    import tensorflow as tf
+    import numpy as np
+    from typing import List
+    from matplotlib import pyplot as plt
+    import imageio
+
+    tf.config.list_physical_devices('GPU')
+
+    []
+
+    physical_devices = tf.config.list_physical_devices('GPU')
+    try:
+        tf.config.experimental.set_memory_growth(physical_devices[0], True)
+    except:
+        pass
+
+1. Build Data Loading Functions
+
+    import gdown
+
+    url = 'https://drive.google.com/uc?id=1YlvpDLix3S-U8fd-gqRwPcWXAXm8JwjL'
+    output = 'data.zip'
+    gdown.download(url, output, quiet=False)
+    gdown.extractall('data.zip')
+
+    Downloading...
+    From (uriginal): https://drive.google.com/uc?id=1YlvpDLix3S-U8fd-gqRwPcWXAXm8JwjL
+    From (redirected): https://drive.google.com/uc?id=1YlvpDLix3S-U8fd-gqRwPcWXAXm8JwjL&confirm=t&uuid=86965d90-4961-4dbf-ab22-17edc8a8754f
+    To: C:\Users\DELL\Downloads\LipNet-main\data.zip
+    100%|██████████| 423M/423M [10:56<00:00, 645kB/s]  
+
+    ['data/',
+     'data/alignments/',
+     'data/alignments/s1/',
+     'data/alignments/s1/bbaf2n.align',
+     'data/alignments/s1/bbaf3s.align',
+     'data/alignments/s1/bbaf4p.align',
+     'data/alignments/s1/bbaf5a.align',
+     'data/alignments/s1/bbal6n.align',
+     'data/alignments/s1/bbal7s.align',
+     'data/alignments/s1/bbal8p.align',
+     'data/alignments/s1/bbal9a.align',
+     'data/alignments/s1/bbas1s.align',
+     'data/alignments/s1/bbas2p.align',
+     'data/alignments/s1/bbas3a.align',
+     'data/alignments/s1/bbaszn.align',
+     'data/alignments/s1/bbaz4n.align',
+     'data/alignments/s1/bbaz5s.align',
+     'data/alignments/s1/bbaz6p.align',
+     'data/alignments/s1/bbaz7a.align',
+     'data/alignments/s1/bbbf6n.align',
+     'data/alignments/s1/bbbf7s.align',
+     'data/alignments/s1/bbbf8p.align',
+     'data/alignments/s1/bbbf9a.align',
+     'data/alignments/s1/bbbm1s.align',
+     'data/alignments/s1/bbbm2p.align',
+     'data/alignments/s1/bbbm3a.align',
+     'data/alignments/s1/bbbmzn.align',
+     'data/alignments/s1/bbbs4n.align',
+     'data/alignments/s1/bbbs5s.align',
+     'data/alignments/s1/bbbs6p.align',
+     'data/alignments/s1/bbbs7a.align',
+     'data/alignments/s1/bbbz8n.align',
+     'data/alignments/s1/bbbz9s.align',
+     'data/alignments/s1/bbie8n.align',
+     'data/alignments/s1/bbie9s.align',
+     'data/alignments/s1/bbif1a.align',
+     'data/alignments/s1/bbifzp.align',
+     'data/alignments/s1/bbil2n.align',
+     'data/alignments/s1/bbil3s.align',
+     'data/alignments/s1/bbil4p.align',
+     'data/alignments/s1/bbil5a.align',
+     'data/alignments/s1/bbir6n.align',
+     'data/alignments/s1/bbir7s.align',
+     'data/alignments/s1/bbir8p.align',
+     'data/alignments/s1/bbir9a.align',
+     'data/alignments/s1/bbiz1s.align',
+     'data/alignments/s1/bbiz2p.align',
+     'data/alignments/s1/bbiz3a.align',
+     'data/alignments/s1/bbizzn.align',
+     'data/alignments/s1/bbwg1s.align',
+     'data/alignments/s1/bbwg2p.align',
+     'data/alignments/s1/bbwg3a.align',
+     'data/alignments/s1/bbwgzn.align',
+     'data/alignments/s1/bbwm4n.align',
+     'data/alignments/s1/bbwm5s.align',
+     'data/alignments/s1/bbwm6p.align',
+     'data/alignments/s1/bbwm7a.align',
+     'data/alignments/s1/bbws8n.align',
+     'data/alignments/s1/bbws9s.align',
+     'data/alignments/s1/bbwt1a.align',
+     'data/alignments/s1/bbwtzp.align',
+     'data/alignments/s1/bgaa6n.align',
+     'data/alignments/s1/bgaa7s.align',
+     'data/alignments/s1/bgaa8p.align',
+     'data/alignments/s1/bgaa9a.align',
+     'data/alignments/s1/bgah1s.align',
+     'data/alignments/s1/bgah2p.align',
+     'data/alignments/s1/bgah3a.align',
+     'data/alignments/s1/bgahzn.align',
+     'data/alignments/s1/bgan4n.align',
+     'data/alignments/s1/bgan5s.align',
+     'data/alignments/s1/bgan6p.align',
+     'data/alignments/s1/bgan7a.align',
+     'data/alignments/s1/bgat8n.align',
+     'data/alignments/s1/bgat9s.align',
+     'data/alignments/s1/bgau1a.align',
+     'data/alignments/s1/bgauzp.align',
+     'data/alignments/s1/bgbb1s.align',
+     'data/alignments/s1/bgbb2p.align',
+     'data/alignments/s1/bgbb3a.align',
+     'data/alignments/s1/bgbbzn.align',
+     'data/alignments/s1/bgbh4n.align',
+     'data/alignments/s1/bgbh5s.align',
+     'data/alignments/s1/bgbh6p.align',
+     'data/alignments/s1/bgbh7a.align',
+     'data/alignments/s1/bgbn8n.align',
+     'data/alignments/s1/bgbn9s.align',
+     'data/alignments/s1/bgbo1a.align',
+     'data/alignments/s1/bgbozp.align',
+     'data/alignments/s1/bgbu2n.align',
+     'data/alignments/s1/bgbu3s.align',
+     'data/alignments/s1/bgbu4p.align',
+     'data/alignments/s1/bgbu5a.align',
+     'data/alignments/s1/bgia2n.align',
+     'data/alignments/s1/bgia3s.align',
+     'data/alignments/s1/bgia4p.align',
+     'data/alignments/s1/bgia5a.align',
+     'data/alignments/s1/bgig6n.align',
+     'data/alignments/s1/bgig7s.align',
+     'data/alignments/s1/bgig8p.align',
+     'data/alignments/s1/bgig9a.align',
+     'data/alignments/s1/bgin1s.align',
+     'data/alignments/s1/bgin2p.align',
+     'data/alignments/s1/bgin3a.align',
+     'data/alignments/s1/bginzn.align',
+     'data/alignments/s1/bgit4n.align',
+     'data/alignments/s1/bgit5s.align',
+     'data/alignments/s1/bgit6p.align',
+     'data/alignments/s1/bgit7a.align',
+     'data/alignments/s1/bgwb4n.align',
+     'data/alignments/s1/bgwb5s.align',
+     'data/alignments/s1/bgwb6p.align',
+     'data/alignments/s1/bgwb7a.align',
+     'data/alignments/s1/bgwh8n.align',
+     'data/alignments/s1/bgwh9s.align',
+     'data/alignments/s1/bgwi1a.align',
+     'data/alignments/s1/bgwizp.align',
+     'data/alignments/s1/bgwo2n.align',
+     'data/alignments/s1/bgwo3s.align',
+     'data/alignments/s1/bgwo4p.align',
+     'data/alignments/s1/bgwo5a.align',
+     'data/alignments/s1/bgwu6n.align',
+     'data/alignments/s1/bgwu7s.align',
+     'data/alignments/s1/bgwu8p.align',
+     'data/alignments/s1/bgwu9a.align',
+     'data/alignments/s1/braf8n.align',
+     'data/alignments/s1/braf9s.align',
+     'data/alignments/s1/brag1a.align',
+     'data/alignments/s1/bragzp.align',
+     'data/alignments/s1/bram2n.align',
+     'data/alignments/s1/bram3s.align',
+     'data/alignments/s1/bram4p.align',
+     'data/alignments/s1/bram5a.align',
+     'data/alignments/s1/bras6n.align',
+     'data/alignments/s1/bras7s.align',
+     'data/alignments/s1/bras8p.align',
+     'data/alignments/s1/bras9a.align',
+     'data/alignments/s1/brba1a.align',
+     'data/alignments/s1/brbazp.align',
+     'data/alignments/s1/brbg2n.align',
+     'data/alignments/s1/brbg3s.align',
+     'data/alignments/s1/brbg4p.align',
+     'data/alignments/s1/brbg5a.align',
+     'data/alignments/s1/brbm6n.align',
+     'data/alignments/s1/brbm7s.align',
+     'data/alignments/s1/brbm8p.align',
+     'data/alignments/s1/brbm9a.align',
+     'data/alignments/s1/brbt1s.align',
+     'data/alignments/s1/brbt2p.align',
+     'data/alignments/s1/brbt3a.align',
+     'data/alignments/s1/brbtzn.align',
+     'data/alignments/s1/brif4n.align',
+     'data/alignments/s1/brif5s.align',
+     'data/alignments/s1/brif6p.align',
+     'data/alignments/s1/brif7a.align',
+     'data/alignments/s1/bril8n.align',
+     'data/alignments/s1/bril9s.align',
+     'data/alignments/s1/brim1a.align',
+     'data/alignments/s1/brimzp.align',
+     'data/alignments/s1/bris2n.align',
+     'data/alignments/s1/bris3s.align',
+     'data/alignments/s1/bris4p.align',
+     'data/alignments/s1/bris5a.align',
+     'data/alignments/s1/briz6n.align',
+     'data/alignments/s1/briz7s.align',
+     'data/alignments/s1/briz8p.align',
+     'data/alignments/s1/briz9a.align',
+     'data/alignments/s1/brwa2n.align',
+     'data/alignments/s1/brwa3s.align',
+     'data/alignments/s1/brwa4p.align',
+     'data/alignments/s1/brwa5a.align',
+     'data/alignments/s1/brwg6n.align',
+     'data/alignments/s1/brwg7s.align',
+     'data/alignments/s1/brwg8p.align',
+     'data/alignments/s1/brwg9a.align',
+     'data/alignments/s1/brwn1s.align',
+     'data/alignments/s1/brwn2p.align',
+     'data/alignments/s1/brwn3a.align',
+     'data/alignments/s1/brwnzn.align',
+     'data/alignments/s1/brwt4n.align',
+     'data/alignments/s1/brwt5s.align',
+     'data/alignments/s1/brwt6p.align',
+     'data/alignments/s1/brwt7a.align',
+     'data/alignments/s1/bwaa1s.align',
+     'data/alignments/s1/bwaa2p.align',
+     'data/alignments/s1/bwaa3a.align',
+     'data/alignments/s1/bwaazn.align',
+     'data/alignments/s1/bwag4n.align',
+     'data/alignments/s1/bwag5s.align',
+     'data/alignments/s1/bwag6p.align',
+     'data/alignments/s1/bwag7a.align',
+     'data/alignments/s1/bwam8n.align',
+     'data/alignments/s1/bwam9s.align',
+     'data/alignments/s1/bwan1a.align',
+     'data/alignments/s1/bwanzp.align',
+     'data/alignments/s1/bwat2n.align',
+     'data/alignments/s1/bwat3s.align',
+     'data/alignments/s1/bwat4p.align',
+     'data/alignments/s1/bwat5a.align',
+     'data/alignments/s1/bwba4n.align',
+     'data/alignments/s1/bwba5s.align',
+     'data/alignments/s1/bwba6p.align',
+     'data/alignments/s1/bwba7a.align',
+     'data/alignments/s1/bwbg8n.align',
+     'data/alignments/s1/bwbg9s.align',
+     'data/alignments/s1/bwbh1a.align',
+     'data/alignments/s1/bwbhzp.align',
+     'data/alignments/s1/bwbn2n.align',
+     'data/alignments/s1/bwbn3s.align',
+     'data/alignments/s1/bwbn4p.align',
+     'data/alignments/s1/bwbn5a.align',
+     'data/alignments/s1/bwbt6n.align',
+     'data/alignments/s1/bwbt7s.align',
+     'data/alignments/s1/bwbt8p.align',
+     'data/alignments/s1/bwbt9a.align',
+     'data/alignments/s1/bwig1s.align',
+     'data/alignments/s1/bwig2p.align',
+     'data/alignments/s1/bwig3a.align',
+     'data/alignments/s1/bwigzn.align',
+     'data/alignments/s1/bwim4n.align',
+     'data/alignments/s1/bwim5s.align',
+     'data/alignments/s1/bwim6p.align',
+     'data/alignments/s1/bwim7a.align',
+     'data/alignments/s1/bwis8n.align',
+     'data/alignments/s1/bwis9s.align',
+     'data/alignments/s1/bwit1a.align',
+     'data/alignments/s1/bwitzp.align',
+     'data/alignments/s1/bwwa8n.align',
+     'data/alignments/s1/bwwa9s.align',
+     'data/alignments/s1/bwwb1a.align',
+     'data/alignments/s1/bwwbzp.align',
+     'data/alignments/s1/bwwh2n.align',
+     'data/alignments/s1/bwwh3s.align',
+     'data/alignments/s1/bwwh4p.align',
+     'data/alignments/s1/bwwh5a.align',
+     'data/alignments/s1/bwwn6n.align',
+     'data/alignments/s1/bwwn7s.align',
+     'data/alignments/s1/bwwn8p.align',
+     'data/alignments/s1/bwwn9a.align',
+     'data/alignments/s1/bwwu1s.align',
+     'data/alignments/s1/bwwu2p.align',
+     'data/alignments/s1/bwwu3a.align',
+     'data/alignments/s1/bwwuzn.align',
+     'data/alignments/s1/lbad6n.align',
+     'data/alignments/s1/lbad7s.align',
+     'data/alignments/s1/lbad8p.align',
+     'data/alignments/s1/lbad9a.align',
+     'data/alignments/s1/lbak1s.align',
+     'data/alignments/s1/lbak2p.align',
+     'data/alignments/s1/lbak3a.align',
+     'data/alignments/s1/lbakzn.align',
+     'data/alignments/s1/lbaq4n.align',
+     'data/alignments/s1/lbaq5s.align',
+     'data/alignments/s1/lbaq6p.align',
+     'data/alignments/s1/lbaq7a.align',
+     'data/alignments/s1/lbax8n.align',
+     'data/alignments/s1/lbax9s.align',
+     'data/alignments/s1/lbay1a.align',
+     'data/alignments/s1/lbayzp.align',
+     'data/alignments/s1/lbbe1s.align',
+     'data/alignments/s1/lbbe2p.align',
+     'data/alignments/s1/lbbe3a.align',
+     'data/alignments/s1/lbbezn.align',
+     'data/alignments/s1/lbbk4n.align',
+     'data/alignments/s1/lbbk5s.align',
+     'data/alignments/s1/lbbk6p.align',
+     'data/alignments/s1/lbbk7a.align',
+     'data/alignments/s1/lbbq8n.align',
+     'data/alignments/s1/lbbq9s.align',
+     'data/alignments/s1/lbbr1a.align',
+     'data/alignments/s1/lbbrzp.align',
+     'data/alignments/s1/lbby2n.align',
+     'data/alignments/s1/lbby3s.align',
+     'data/alignments/s1/lbby4p.align',
+     'data/alignments/s1/lbby5a.align',
+     'data/alignments/s1/lbid2n.align',
+     'data/alignments/s1/lbid3s.align',
+     'data/alignments/s1/lbid4p.align',
+     'data/alignments/s1/lbid5a.align',
+     'data/alignments/s1/lbij6n.align',
+     'data/alignments/s1/lbij7s.align',
+     'data/alignments/s1/lbij8p.align',
+     'data/alignments/s1/lbij9a.align',
+     'data/alignments/s1/lbiq1s.align',
+     'data/alignments/s1/lbiq2p.align',
+     'data/alignments/s1/lbiq3a.align',
+     'data/alignments/s1/lbiqzn.align',
+     'data/alignments/s1/lbix4n.align',
+     'data/alignments/s1/lbix5s.align',
+     'data/alignments/s1/lbix6p.align',
+     'data/alignments/s1/lbix7a.align',
+     'data/alignments/s1/lbwe4n.align',
+     'data/alignments/s1/lbwe5s.align',
+     'data/alignments/s1/lbwe6p.align',
+     'data/alignments/s1/lbwe7a.align',
+     'data/alignments/s1/lbwk8n.align',
+     'data/alignments/s1/lbwk9s.align',
+     'data/alignments/s1/lbwl1a.align',
+     'data/alignments/s1/lbwlzp.align',
+     'data/alignments/s1/lbwr2n.align',
+     'data/alignments/s1/lbwr3s.align',
+     'data/alignments/s1/lbwr4p.align',
+     'data/alignments/s1/lbwr5a.align',
+     'data/alignments/s1/lbwy6n.align',
+     'data/alignments/s1/lbwy7s.align',
+     'data/alignments/s1/lbwy8p.align',
+     'data/alignments/s1/lbwy9a.align',
+     'data/alignments/s1/lgaf4n.align',
+     'data/alignments/s1/lgaf5s.align',
+     'data/alignments/s1/lgaf6p.align',
+     'data/alignments/s1/lgaf7a.align',
+     'data/alignments/s1/lgal8n.align',
+     'data/alignments/s1/lgal9s.align',
+     'data/alignments/s1/lgam1a.align',
+     'data/alignments/s1/lgamzp.align',
+     'data/alignments/s1/lgas2n.align',
+     'data/alignments/s1/lgas3s.align',
+     'data/alignments/s1/lgas4p.align',
+     'data/alignments/s1/lgas5a.align',
+     'data/alignments/s1/lgaz6n.align',
+     'data/alignments/s1/lgaz7s.align',
+     'data/alignments/s1/lgaz8p.align',
+     'data/alignments/s1/lgaz9a.align',
+     'data/alignments/s1/lgbf8n.align',
+     'data/alignments/s1/lgbf9s.align',
+     'data/alignments/s1/lgbg1a.align',
+     'data/alignments/s1/lgbgzp.align',
+     'data/alignments/s1/lgbm2n.align',
+     'data/alignments/s1/lgbm3s.align',
+     'data/alignments/s1/lgbm4p.align',
+     'data/alignments/s1/lgbm5a.align',
+     'data/alignments/s1/lgbs6n.align',
+     'data/alignments/s1/lgbs7s.align',
+     'data/alignments/s1/lgbs8p.align',
+     'data/alignments/s1/lgbs9a.align',
+     'data/alignments/s1/lgif1s.align',
+     'data/alignments/s1/lgif2p.align',
+     'data/alignments/s1/lgif3a.align',
+     'data/alignments/s1/lgifzn.align',
+     'data/alignments/s1/lgil4n.align',
+     'data/alignments/s1/lgil5s.align',
+     'data/alignments/s1/lgil6p.align',
+     'data/alignments/s1/lgil7a.align',
+     'data/alignments/s1/lgir8n.align',
+     'data/alignments/s1/lgir9s.align',
+     'data/alignments/s1/lgis1a.align',
+     'data/alignments/s1/lgiszp.align',
+     'data/alignments/s1/lgiz2n.align',
+     'data/alignments/s1/lgiz3s.align',
+     'data/alignments/s1/lgiz4p.align',
+     'data/alignments/s1/lgiz5a.align',
+     'data/alignments/s1/lgwa1a.align',
+     'data/alignments/s1/lgwazp.align',
+     'data/alignments/s1/lgwg2n.align',
+     'data/alignments/s1/lgwg3s.align',
+     'data/alignments/s1/lgwg4p.align',
+     'data/alignments/s1/lgwg5a.align',
+     'data/alignments/s1/lgwm6n.align',
+     'data/alignments/s1/lgwm7s.align',
+     'data/alignments/s1/lgwm8p.align',
+     'data/alignments/s1/lgwm9a.align',
+     'data/alignments/s1/lgwt1s.align',
+     'data/alignments/s1/lgwt2p.align',
+     'data/alignments/s1/lgwt3a.align',
+     'data/alignments/s1/lgwtzn.align',
+     'data/alignments/s1/lrae2n.align',
+     'data/alignments/s1/lrae3s.align',
+     'data/alignments/s1/lrae4p.align',
+     'data/alignments/s1/lrae5a.align',
+     'data/alignments/s1/lrak6n.align',
+     'data/alignments/s1/lrak7s.align',
+     'data/alignments/s1/lrak8p.align',
+     'data/alignments/s1/lrak9a.align',
+     'data/alignments/s1/lrar1s.align',
+     'data/alignments/s1/lrar2p.align',
+     'data/alignments/s1/lrar3a.align',
+     'data/alignments/s1/lrarzn.align',
+     'data/alignments/s1/lray4n.align',
+     'data/alignments/s1/lray5s.align',
+     'data/alignments/s1/lray6p.align',
+     'data/alignments/s1/lray7a.align',
+     'data/alignments/s1/lrbe6n.align',
+     'data/alignments/s1/lrbe7s.align',
+     'data/alignments/s1/lrbe8p.align',
+     'data/alignments/s1/lrbe9a.align',
+     'data/alignments/s1/lrbl1s.align',
+     'data/alignments/s1/lrbl2p.align',
+     'data/alignments/s1/lrbl3a.align',
+     'data/alignments/s1/lrblzn.align',
+     'data/alignments/s1/lrbr4n.align',
+     'data/alignments/s1/lrbr5s.align',
+     'data/alignments/s1/lrbr6p.align',
+     'data/alignments/s1/lrbr7a.align',
+     'data/alignments/s1/lrby8n.align',
+     'data/alignments/s1/lrby9s.align',
+     'data/alignments/s1/lrbz1a.align',
+     'data/alignments/s1/lrbzzp.align',
+     'data/alignments/s1/lrid8n.align',
+     'data/alignments/s1/lrid9s.align',
+     'data/alignments/s1/lrie1a.align',
+     'data/alignments/s1/lriezp.align',
+     'data/alignments/s1/lrik2n.align',
+     'data/alignments/s1/lrik3s.align',
+     'data/alignments/s1/lrik4p.align',
+     'data/alignments/s1/lrik5a.align',
+     'data/alignments/s1/lriq6n.align',
+     'data/alignments/s1/lriq7s.align',
+     'data/alignments/s1/lriq8p.align',
+     'data/alignments/s1/lriq9a.align',
+     'data/alignments/s1/lriy1s.align',
+     'data/alignments/s1/lriy2p.align',
+     'data/alignments/s1/lriy3a.align',
+     'data/alignments/s1/lriyzn.align',
+     'data/alignments/s1/lrwf1s.align',
+     'data/alignments/s1/lrwf2p.align',
+     'data/alignments/s1/lrwf3a.align',
+     'data/alignments/s1/lrwfzn.align',
+     'data/alignments/s1/lrwl4n.align',
+     'data/alignments/s1/lrwl5s.align',
+     'data/alignments/s1/lrwl6p.align',
+     'data/alignments/s1/lrwl7a.align',
+     'data/alignments/s1/lrwr8n.align',
+     'data/alignments/s1/lrwr9s.align',
+     'data/alignments/s1/lrws1a.align',
+     'data/alignments/s1/lrwszp.align',
+     'data/alignments/s1/lrwz2n.align',
+     'data/alignments/s1/lrwz3s.align',
+     'data/alignments/s1/lrwz4p.align',
+     'data/alignments/s1/lrwz5a.align',
+     'data/alignments/s1/lwae8n.align',
+     'data/alignments/s1/lwae9s.align',
+     'data/alignments/s1/lwaf1a.align',
+     'data/alignments/s1/lwafzp.align',
+     'data/alignments/s1/lwal2n.align',
+     'data/alignments/s1/lwal3s.align',
+     'data/alignments/s1/lwal4p.align',
+     'data/alignments/s1/lwal5a.align',
+     'data/alignments/s1/lwar6n.align',
+     'data/alignments/s1/lwar7s.align',
+     'data/alignments/s1/lwar8p.align',
+     'data/alignments/s1/lwar9a.align',
+     'data/alignments/s1/lwaz1s.align',
+     'data/alignments/s1/lwaz2p.align',
+     'data/alignments/s1/lwaz3a.align',
+     'data/alignments/s1/lwazzn.align',
+     'data/alignments/s1/lwbf2n.align',
+     'data/alignments/s1/lwbf3s.align',
+     'data/alignments/s1/lwbf4p.align',
+     'data/alignments/s1/lwbf5a.align',
+     'data/alignments/s1/lwbl6n.align',
+     'data/alignments/s1/lwbl7s.align',
+     'data/alignments/s1/lwbl8p.align',
+     'data/alignments/s1/lwbl9a.align',
+     'data/alignments/s1/lwbs1s.align',
+     'data/alignments/s1/lwbs2p.align',
+     'data/alignments/s1/lwbs3a.align',
+     'data/alignments/s1/lwbszn.align',
+     'data/alignments/s1/lwbz4n.align',
+     'data/alignments/s1/lwbz5s.align',
+     'data/alignments/s1/lwbz6p.align',
+     'data/alignments/s1/lwbz7a.align',
+     'data/alignments/s1/lwie4n.align',
+     'data/alignments/s1/lwie5s.align',
+     'data/alignments/s1/lwie6p.align',
+     'data/alignments/s1/lwie7a.align',
+     'data/alignments/s1/lwik8n.align',
+     'data/alignments/s1/lwik9s.align',
+     'data/alignments/s1/lwil1a.align',
+     'data/alignments/s1/lwilzp.align',
+     'data/alignments/s1/lwir2n.align',
+     'data/alignments/s1/lwir3s.align',
+     'data/alignments/s1/lwir4p.align',
+     'data/alignments/s1/lwir5a.align',
+     'data/alignments/s1/lwiy6n.align',
+     'data/alignments/s1/lwiy7s.align',
+     'data/alignments/s1/lwiy8p.align',
+     'data/alignments/s1/lwiy9a.align',
+     'data/alignments/s1/lwwf6n.align',
+     'data/alignments/s1/lwwf7s.align',
+     'data/alignments/s1/lwwf8p.align',
+     'data/alignments/s1/lwwf9a.align',
+     'data/alignments/s1/lwwm1s.align',
+     'data/alignments/s1/lwwm2p.align',
+     'data/alignments/s1/lwwm3a.align',
+     'data/alignments/s1/lwwmzn.align',
+     'data/alignments/s1/lwws4n.align',
+     'data/alignments/s1/lwws5s.align',
+     'data/alignments/s1/lwws6p.align',
+     'data/alignments/s1/lwws7a.align',
+     'data/alignments/s1/lwwz8n.align',
+     'data/alignments/s1/lwwz9s.align',
+     'data/alignments/s1/pbac1s.align',
+     'data/alignments/s1/pbac2p.align',
+     'data/alignments/s1/pbac3a.align',
+     'data/alignments/s1/pbaczn.align',
+     'data/alignments/s1/pbai4n.align',
+     'data/alignments/s1/pbai5s.align',
+     'data/alignments/s1/pbai6p.align',
+     'data/alignments/s1/pbai7a.align',
+     'data/alignments/s1/pbao8n.align',
+     'data/alignments/s1/pbao9s.align',
+     'data/alignments/s1/pbap1a.align',
+     'data/alignments/s1/pbapzp.align',
+     'data/alignments/s1/pbav2n.align',
+     'data/alignments/s1/pbav3s.align',
+     'data/alignments/s1/pbav4p.align',
+     'data/alignments/s1/pbav5a.align',
+     'data/alignments/s1/pbbc4n.align',
+     'data/alignments/s1/pbbc5s.align',
+     'data/alignments/s1/pbbc6p.align',
+     'data/alignments/s1/pbbc7a.align',
+     'data/alignments/s1/pbbi8n.align',
+     'data/alignments/s1/pbbi9s.align',
+     'data/alignments/s1/pbbj1a.align',
+     'data/alignments/s1/pbbjzp.align',
+     'data/alignments/s1/pbbp2n.align',
+     'data/alignments/s1/pbbp3s.align',
+     'data/alignments/s1/pbbp4p.align',
+     'data/alignments/s1/pbbp5a.align',
+     'data/alignments/s1/pbbv6n.align',
+     'data/alignments/s1/pbbv7s.align',
+     'data/alignments/s1/pbbv8p.align',
+     'data/alignments/s1/pbbv9a.align',
+     'data/alignments/s1/pbib6n.align',
+     'data/alignments/s1/pbib7s.align',
+     'data/alignments/s1/pbib8p.align',
+     'data/alignments/s1/pbib9a.align',
+     'data/alignments/s1/pbii1s.align',
+     'data/alignments/s1/pbii2p.align',
+     'data/alignments/s1/pbii3a.align',
+     'data/alignments/s1/pbiizn.align',
+     'data/alignments/s1/pbio4n.align',
+     'data/alignments/s1/pbio5s.align',
+     'data/alignments/s1/pbio6p.align',
+     'data/alignments/s1/pbio7a.align',
+     'data/alignments/s1/pbiu8n.align',
+     'data/alignments/s1/pbiu9s.align',
+     'data/alignments/s1/pbiv1a.align',
+     'data/alignments/s1/pbivzp.align',
+     'data/alignments/s1/pbwc8n.align',
+     'data/alignments/s1/pbwc9s.align',
+     'data/alignments/s1/pbwd1a.align',
+     'data/alignments/s1/pbwdzp.align',
+     'data/alignments/s1/pbwj2n.align',
+     'data/alignments/s1/pbwj3s.align',
+     'data/alignments/s1/pbwj4p.align',
+     'data/alignments/s1/pbwj5a.align',
+     'data/alignments/s1/pbwp6n.align',
+     'data/alignments/s1/pbwp7s.align',
+     'data/alignments/s1/pbwp8p.align',
+     'data/alignments/s1/pbwp9a.align',
+     'data/alignments/s1/pbwx1s.align',
+     'data/alignments/s1/pbwx2p.align',
+     'data/alignments/s1/pbwx3a.align',
+     'data/alignments/s1/pbwxzn.align',
+     'data/alignments/s1/pgad8n.align',
+     'data/alignments/s1/pgad9s.align',
+     'data/alignments/s1/pgae1a.align',
+     'data/alignments/s1/pgaezp.align',
+     'data/alignments/s1/pgak2n.align',
+     'data/alignments/s1/pgak3s.align',
+     'data/alignments/s1/pgak4p.align',
+     'data/alignments/s1/pgak5a.align',
+     'data/alignments/s1/pgaq6n.align',
+     'data/alignments/s1/pgaq7s.align',
+     'data/alignments/s1/pgaq8p.align',
+     'data/alignments/s1/pgaq9a.align',
+     'data/alignments/s1/pgay1s.align',
+     'data/alignments/s1/pgay2p.align',
+     'data/alignments/s1/pgay3a.align',
+     'data/alignments/s1/pgayzn.align',
+     'data/alignments/s1/pgbe2n.align',
+     'data/alignments/s1/pgbe3s.align',
+     'data/alignments/s1/pgbe4p.align',
+     'data/alignments/s1/pgbe5a.align',
+     'data/alignments/s1/pgbk6n.align',
+     'data/alignments/s1/pgbk7s.align',
+     'data/alignments/s1/pgbk8p.align',
+     'data/alignments/s1/pgbk9a.align',
+     'data/alignments/s1/pgbr1s.align',
+     'data/alignments/s1/pgbr2p.align',
+     'data/alignments/s1/pgbr3a.align',
+     'data/alignments/s1/pgbrzn.align',
+     'data/alignments/s1/pgby4n.align',
+     'data/alignments/s1/pgby5s.align',
+     'data/alignments/s1/pgby6p.align',
+     'data/alignments/s1/pgby7a.align',
+     'data/alignments/s1/pgid4n.align',
+     'data/alignments/s1/pgid5s.align',
+     'data/alignments/s1/pgid6p.align',
+     'data/alignments/s1/pgid7a.align',
+     'data/alignments/s1/pgij8n.align',
+     'data/alignments/s1/pgij9s.align',
+     'data/alignments/s1/pgik1a.align',
+     'data/alignments/s1/pgikzp.align',
+     'data/alignments/s1/pgiq2n.align',
+     'data/alignments/s1/pgiq3s.align',
+     'data/alignments/s1/pgiq4p.align',
+     'data/alignments/s1/pgiq5a.align',
+     'data/alignments/s1/pgix6n.align',
+     'data/alignments/s1/pgix7s.align',
+     'data/alignments/s1/pgix8p.align',
+     'data/alignments/s1/pgix9a.align',
+     'data/alignments/s1/pgwe6n.align',
+     'data/alignments/s1/pgwe7s.align',
+     'data/alignments/s1/pgwe8p.align',
+     'data/alignments/s1/pgwe9a.align',
+     'data/alignments/s1/pgwl1s.align',
+     'data/alignments/s1/pgwl2p.align',
+     'data/alignments/s1/pgwl3a.align',
+     'data/alignments/s1/pgwlzn.align',
+     'data/alignments/s1/pgwr4n.align',
+     'data/alignments/s1/pgwr5s.align',
+     'data/alignments/s1/pgwr6p.align',
+     'data/alignments/s1/pgwr7a.align',
+     'data/alignments/s1/pgwy8n.align',
+     'data/alignments/s1/pgwy9s.align',
+     'data/alignments/s1/pgwz1a.align',
+     'data/alignments/s1/pgwzzp.align',
+     'data/alignments/s1/prac6n.align',
+     'data/alignments/s1/prac7s.align',
+     'data/alignments/s1/prac8p.align',
+     'data/alignments/s1/prac9a.align',
+     'data/alignments/s1/praj1s.align',
+     'data/alignments/s1/praj2p.align',
+     'data/alignments/s1/praj3a.align',
+     'data/alignments/s1/prajzn.align',
+     'data/alignments/s1/prap4n.align',
+     'data/alignments/s1/prap5s.align',
+     'data/alignments/s1/prap6p.align',
+     'data/alignments/s1/prap7a.align',
+     'data/alignments/s1/prav8n.align',
+     'data/alignments/s1/prav9s.align',
+     'data/alignments/s1/prax1a.align',
+     'data/alignments/s1/praxzp.align',
+     'data/alignments/s1/prbd1s.align',
+     'data/alignments/s1/prbd2p.align',
+     'data/alignments/s1/prbd3a.align',
+     'data/alignments/s1/prbdzn.align',
+     'data/alignments/s1/prbj4n.align',
+     'data/alignments/s1/prbj5s.align',
+     'data/alignments/s1/prbj6p.align',
+     'data/alignments/s1/prbj7a.align',
+     'data/alignments/s1/prbp8n.align',
+     'data/alignments/s1/prbp9s.align',
+     'data/alignments/s1/prbq1a.align',
+     'data/alignments/s1/prbqzp.align',
+     'data/alignments/s1/prbx2n.align',
+     'data/alignments/s1/prbx3s.align',
+     'data/alignments/s1/prbx4p.align',
+     'data/alignments/s1/prbx5a.align',
+     'data/alignments/s1/pric2n.align',
+     'data/alignments/s1/pric3s.align',
+     'data/alignments/s1/pric4p.align',
+     'data/alignments/s1/pric5a.align',
+     'data/alignments/s1/prii6n.align',
+     'data/alignments/s1/prii7s.align',
+     'data/alignments/s1/prii8p.align',
+     'data/alignments/s1/prii9a.align',
+     'data/alignments/s1/prip1s.align',
+     'data/alignments/s1/prip2p.align',
+     'data/alignments/s1/prip3a.align',
+     'data/alignments/s1/pripzn.align',
+     'data/alignments/s1/priv4n.align',
+     'data/alignments/s1/priv5s.align',
+     'data/alignments/s1/priv6p.align',
+     'data/alignments/s1/priv7a.align',
+     'data/alignments/s1/prwd4n.align',
+     'data/alignments/s1/prwd5s.align',
+     'data/alignments/s1/prwd6p.align',
+     'data/alignments/s1/prwd7a.align',
+     'data/alignments/s1/prwj8n.align',
+     'data/alignments/s1/prwj9s.align',
+     'data/alignments/s1/prwk1a.align',
+     'data/alignments/s1/prwkzp.align',
+     'data/alignments/s1/prwq2n.align',
+     'data/alignments/s1/prwq3s.align',
+     'data/alignments/s1/prwq4p.align',
+     'data/alignments/s1/prwq5a.align',
+     'data/alignments/s1/prwx6n.align',
+     'data/alignments/s1/prwx7s.align',
+     'data/alignments/s1/prwx8p.align',
+     'data/alignments/s1/prwx9a.align',
+     'data/alignments/s1/pwad2n.align',
+     'data/alignments/s1/pwad3s.align',
+     'data/alignments/s1/pwad4p.align',
+     'data/alignments/s1/pwad5a.align',
+     'data/alignments/s1/pwaj6n.align',
+     'data/alignments/s1/pwaj7s.align',
+     'data/alignments/s1/pwaj8p.align',
+     'data/alignments/s1/pwaj9a.align',
+     'data/alignments/s1/pwaq1s.align',
+     'data/alignments/s1/pwaq2p.align',
+     'data/alignments/s1/pwaq3a.align',
+     'data/alignments/s1/pwaqzn.align',
+     'data/alignments/s1/pwax4n.align',
+     'data/alignments/s1/pwax5s.align',
+     'data/alignments/s1/pwax6p.align',
+     'data/alignments/s1/pwax7a.align',
+     'data/alignments/s1/pwbd6n.align',
+     'data/alignments/s1/pwbd7s.align',
+     'data/alignments/s1/pwbd8p.align',
+     'data/alignments/s1/pwbd9a.align',
+     'data/alignments/s1/pwbk1s.align',
+     'data/alignments/s1/pwbk2p.align',
+     'data/alignments/s1/pwbk3a.align',
+     'data/alignments/s1/pwbkzn.align',
+     'data/alignments/s1/pwbq4n.align',
+     'data/alignments/s1/pwbq5s.align',
+     'data/alignments/s1/pwbq6p.align',
+     'data/alignments/s1/pwbq7a.align',
+     'data/alignments/s1/pwbx8n.align',
+     'data/alignments/s1/pwbx9s.align',
+     'data/alignments/s1/pwby1a.align',
+     'data/alignments/s1/pwbyzp.align',
+     'data/alignments/s1/pwic8n.align',
+     'data/alignments/s1/pwic9s.align',
+     'data/alignments/s1/pwid1a.align',
+     'data/alignments/s1/pwidzp.align',
+     'data/alignments/s1/pwij2n.align',
+     'data/alignments/s1/pwij3s.align',
+     'data/alignments/s1/pwij4p.align',
+     'data/alignments/s1/pwij5a.align',
+     'data/alignments/s1/pwip6n.align',
+     'data/alignments/s1/pwip7s.align',
+     'data/alignments/s1/pwip8p.align',
+     'data/alignments/s1/pwip9a.align',
+     'data/alignments/s1/pwix1s.align',
+     'data/alignments/s1/pwix2p.align',
+     'data/alignments/s1/pwix3a.align',
+     'data/alignments/s1/pwixzn.align',
+     'data/alignments/s1/pwwe1s.align',
+     'data/alignments/s1/pwwe2p.align',
+     'data/alignments/s1/pwwe3a.align',
+     'data/alignments/s1/pwwezn.align',
+     'data/alignments/s1/pwwk4n.align',
+     'data/alignments/s1/pwwk5s.align',
+     'data/alignments/s1/pwwk6p.align',
+     'data/alignments/s1/pwwk7a.align',
+     'data/alignments/s1/pwwq8n.align',
+     'data/alignments/s1/pwwq9s.align',
+     'data/alignments/s1/pwwr1a.align',
+     'data/alignments/s1/pwwrzp.align',
+     'data/alignments/s1/pwwy2n.align',
+     'data/alignments/s1/pwwy3s.align',
+     'data/alignments/s1/pwwy4p.align',
+     'data/alignments/s1/pwwy5a.align',
+     'data/alignments/s1/sbaa4n.align',
+     'data/alignments/s1/sbaa5s.align',
+     'data/alignments/s1/sbaa6p.align',
+     'data/alignments/s1/sbaa7a.align',
+     'data/alignments/s1/sbag8n.align',
+     'data/alignments/s1/sbag9s.align',
+     'data/alignments/s1/sbah1a.align',
+     'data/alignments/s1/sbahzp.align',
+     'data/alignments/s1/sban2n.align',
+     'data/alignments/s1/sban3s.align',
+     'data/alignments/s1/sban4p.align',
+     'data/alignments/s1/sban5a.align',
+     'data/alignments/s1/sbat6n.align',
+     'data/alignments/s1/sbat7s.align',
+     'data/alignments/s1/sbat8p.align',
+     'data/alignments/s1/sbat9a.align',
+     'data/alignments/s1/sbba8n.align',
+     'data/alignments/s1/sbba9s.align',
+     'data/alignments/s1/sbbb1a.align',
+     'data/alignments/s1/sbbbzp.align',
+     'data/alignments/s1/sbbh2n.align',
+     'data/alignments/s1/sbbh3s.align',
+     'data/alignments/s1/sbbh4p.align',
+     'data/alignments/s1/sbbh5a.align',
+     'data/alignments/s1/sbbn6n.align',
+     'data/alignments/s1/sbbn7s.align',
+     'data/alignments/s1/sbbn8p.align',
+     'data/alignments/s1/sbbn9a.align',
+     'data/alignments/s1/sbbu1s.align',
+     'data/alignments/s1/sbbu2p.align',
+     'data/alignments/s1/sbbu3a.align',
+     'data/alignments/s1/sbbuzn.align',
+     'data/alignments/s1/sbia1s.align',
+     'data/alignments/s1/sbia2p.align',
+     'data/alignments/s1/sbia3a.align',
+     'data/alignments/s1/sbiazn.align',
+     'data/alignments/s1/sbig4n.align',
+     'data/alignments/s1/sbig5s.align',
+     'data/alignments/s1/sbig6p.align',
+     'data/alignments/s1/sbig7a.align',
+     'data/alignments/s1/sbim8n.align',
+     'data/alignments/s1/sbim9s.align',
+     'data/alignments/s1/sbin1a.align',
+     'data/alignments/s1/sbinzp.align',
+     'data/alignments/s1/sbit2n.align',
+     'data/alignments/s1/sbit3s.align',
+     'data/alignments/s1/sbit4p.align',
+     'data/alignments/s1/sbit5a.align',
+     'data/alignments/s1/sbwb2n.align',
+     'data/alignments/s1/sbwb3s.align',
+     'data/alignments/s1/sbwb4p.align',
+     'data/alignments/s1/sbwb5a.align',
+     'data/alignments/s1/sbwh6n.align',
+     'data/alignments/s1/sbwh7s.align',
+     'data/alignments/s1/sbwh8p.align',
+     'data/alignments/s1/sbwh9a.align',
+     'data/alignments/s1/sbwo1s.align',
+     'data/alignments/s1/sbwo2p.align',
+     'data/alignments/s1/sbwo3a.align',
+     'data/alignments/s1/sbwozn.align',
+     'data/alignments/s1/sbwu4n.align',
+     'data/alignments/s1/sbwu5s.align',
+     'data/alignments/s1/sbwu6p.align',
+     'data/alignments/s1/sbwu7a.align',
+     'data/alignments/s1/sgac2n.align',
+     'data/alignments/s1/sgac3s.align',
+     'data/alignments/s1/sgac4p.align',
+     'data/alignments/s1/sgac5a.align',
+     'data/alignments/s1/sgai6n.align',
+     'data/alignments/s1/sgai7s.align',
+     'data/alignments/s1/sgai8p.align',
+     'data/alignments/s1/sgai9a.align',
+     'data/alignments/s1/sgap1s.align',
+     'data/alignments/s1/sgap2p.align',
+     'data/alignments/s1/sgap3a.align',
+     'data/alignments/s1/sgapzn.align',
+     'data/alignments/s1/sgav4n.align',
+     'data/alignments/s1/sgav5s.align',
+     'data/alignments/s1/sgav6p.align',
+     'data/alignments/s1/sgav7a.align',
+     'data/alignments/s1/sgbc6n.align',
+     'data/alignments/s1/sgbc7s.align',
+     'data/alignments/s1/sgbc8p.align',
+     'data/alignments/s1/sgbc9a.align',
+     'data/alignments/s1/sgbj1s.align',
+     'data/alignments/s1/sgbj2p.align',
+     'data/alignments/s1/sgbj3a.align',
+     'data/alignments/s1/sgbjzn.align',
+     'data/alignments/s1/sgbp4n.align',
+     'data/alignments/s1/sgbp5s.align',
+     'data/alignments/s1/sgbp6p.align',
+     'data/alignments/s1/sgbp7a.align',
+     'data/alignments/s1/sgbv8n.align',
+     'data/alignments/s1/sgbv9s.align',
+     'data/alignments/s1/sgbx1a.align',
+     'data/alignments/s1/sgbxzp.align',
+     'data/alignments/s1/sgib8n.align',
+     'data/alignments/s1/sgib9s.align',
+     'data/alignments/s1/sgic1a.align',
+     'data/alignments/s1/sgiczp.align',
+     'data/alignments/s1/sgii2n.align',
+     'data/alignments/s1/sgii3s.align',
+     'data/alignments/s1/sgii4p.align',
+     'data/alignments/s1/sgii5a.align',
+     'data/alignments/s1/sgio6n.align',
+     'data/alignments/s1/sgio7s.align',
+     'data/alignments/s1/sgio8p.align',
+     'data/alignments/s1/sgio9a.align',
+     'data/alignments/s1/sgiv1s.align',
+     'data/alignments/s1/sgiv2p.align',
+     'data/alignments/s1/sgiv3a.align',
+     'data/alignments/s1/sgivzn.align',
+     'data/alignments/s1/sgwd1s.align',
+     'data/alignments/s1/sgwd2p.align',
+     'data/alignments/s1/sgwd3a.align',
+     'data/alignments/s1/sgwdzn.align',
+     'data/alignments/s1/sgwj4n.align',
+     'data/alignments/s1/sgwj5s.align',
+     'data/alignments/s1/sgwj6p.align',
+     'data/alignments/s1/sgwj7a.align',
+     'data/alignments/s1/sgwp8n.align',
+     'data/alignments/s1/sgwp9s.align',
+     'data/alignments/s1/sgwq1a.align',
+     'data/alignments/s1/sgwqzp.align',
+     'data/alignments/s1/sgwx2n.align',
+     'data/alignments/s1/sgwx3s.align',
+     'data/alignments/s1/sgwx4p.align',
+     'data/alignments/s1/sgwx5a.align',
+     'data/alignments/s1/srab1s.align',
+     'data/alignments/s1/srab2p.align',
+     'data/alignments/s1/srab3a.align',
+     'data/alignments/s1/srabzn.align',
+     'data/alignments/s1/srah4n.align',
+     'data/alignments/s1/srah5s.align',
+     'data/alignments/s1/srah6p.align',
+     'data/alignments/s1/srah7a.align',
+     'data/alignments/s1/sran8n.align',
+     'data/alignments/s1/sran9s.align',
+     'data/alignments/s1/srao1a.align',
+     'data/alignments/s1/sraozp.align',
+     'data/alignments/s1/srau2n.align',
+     'data/alignments/s1/srau3s.align',
+     'data/alignments/s1/srau4p.align',
+     'data/alignments/s1/srau5a.align',
+     'data/alignments/s1/srbb4n.align',
+     'data/alignments/s1/srbb5s.align',
+     'data/alignments/s1/srbb6p.align',
+     'data/alignments/s1/srbb7a.align',
+     'data/alignments/s1/srbh8n.align',
+     'data/alignments/s1/srbh9s.align',
+     'data/alignments/s1/srbi1a.align',
+     'data/alignments/s1/srbizp.align',
+     'data/alignments/s1/srbo2n.align',
+     'data/alignments/s1/srbo3s.align',
+     'data/alignments/s1/srbo4p.align',
+     'data/alignments/s1/srbo5a.align',
+     'data/alignments/s1/srbu6n.align',
+     'data/alignments/s1/srbu7s.align',
+     'data/alignments/s1/srbu8p.align',
+     'data/alignments/s1/srbu9a.align',
+     'data/alignments/s1/sria6n.align',
+     'data/alignments/s1/sria7s.align',
+     'data/alignments/s1/sria8p.align',
+     'data/alignments/s1/sria9a.align',
+     'data/alignments/s1/srih1s.align',
+     'data/alignments/s1/srih2p.align',
+     'data/alignments/s1/srih3a.align',
+     'data/alignments/s1/srihzn.align',
+     'data/alignments/s1/srin4n.align',
+     'data/alignments/s1/srin5s.align',
+     'data/alignments/s1/srin6p.align',
+     'data/alignments/s1/srin7a.align',
+     'data/alignments/s1/srit8n.align',
+     'data/alignments/s1/srit9s.align',
+     'data/alignments/s1/sriu1a.align',
+     'data/alignments/s1/sriuzp.align',
+     'data/alignments/s1/srwb8n.align',
+     'data/alignments/s1/srwb9s.align',
+     'data/alignments/s1/srwc1a.align',
+     'data/alignments/s1/srwczp.align',
+     'data/alignments/s1/srwi2n.align',
+     'data/alignments/s1/srwi3s.align',
+     'data/alignments/s1/srwi4p.align',
+     'data/alignments/s1/srwi5a.align',
+     'data/alignments/s1/srwo6n.align',
+     'data/alignments/s1/srwo7s.align',
+     'data/alignments/s1/srwo8p.align',
+     'data/alignments/s1/srwo9a.align',
+     'data/alignments/s1/srwv1s.align',
+     'data/alignments/s1/srwv2p.align',
+     'data/alignments/s1/srwv3a.align',
+     'data/alignments/s1/srwvzn.align',
+     'data/alignments/s1/swab6n.align',
+     'data/alignments/s1/swab7s.align',
+     'data/alignments/s1/swab8p.align',
+     'data/alignments/s1/swab9a.align',
+     'data/alignments/s1/swai1s.align',
+     'data/alignments/s1/swai2p.align',
+     'data/alignments/s1/swai3a.align',
+     'data/alignments/s1/swaizn.align',
+     'data/alignments/s1/swao4n.align',
+     'data/alignments/s1/swao5s.align',
+     'data/alignments/s1/swao6p.align',
+     'data/alignments/s1/swao7a.align',
+     'data/alignments/s1/swau8n.align',
+     'data/alignments/s1/swau9s.align',
+     'data/alignments/s1/swav1a.align',
+     'data/alignments/s1/swavzp.align',
+     'data/alignments/s1/swbc1s.align',
+     'data/alignments/s1/swbc2p.align',
+     'data/alignments/s1/swbc3a.align',
+     'data/alignments/s1/swbczn.align',
+     'data/alignments/s1/swbi4n.align',
+     'data/alignments/s1/swbi5s.align',
+     'data/alignments/s1/swbi6p.align',
+     'data/alignments/s1/swbi7a.align',
+     'data/alignments/s1/swbo8n.align',
+     'data/alignments/s1/swbo9s.align',
+     'data/alignments/s1/swbp1a.align',
+     'data/alignments/s1/swbpzp.align',
+     'data/alignments/s1/swbv2n.align',
+     'data/alignments/s1/swbv3s.align',
+     'data/alignments/s1/swbv4p.align',
+     'data/alignments/s1/swbv5a.align',
+     'data/alignments/s1/swib2n.align',
+     'data/alignments/s1/swib3s.align',
+     'data/alignments/s1/swib4p.align',
+     'data/alignments/s1/swib5a.align',
+     'data/alignments/s1/swih6n.align',
+     'data/alignments/s1/swih7s.align',
+     'data/alignments/s1/swih8p.align',
+     'data/alignments/s1/swih9a.align',
+     'data/alignments/s1/swio1s.align',
+     'data/alignments/s1/swio2p.align',
+     'data/alignments/s1/swio3a.align',
+     'data/alignments/s1/swiozn.align',
+     'data/alignments/s1/swiu4n.align',
+     'data/alignments/s1/swiu5s.align',
+     'data/alignments/s1/swiu6p.align',
+     'data/alignments/s1/swiu7a.align',
+     'data/alignments/s1/swwc4n.align',
+     'data/alignments/s1/swwc5s.align',
+     'data/alignments/s1/swwc6p.align',
+     'data/alignments/s1/swwc7a.align',
+     'data/alignments/s1/swwi8n.align',
+     'data/alignments/s1/swwi9s.align',
+     'data/alignments/s1/swwj1a.align',
+     'data/alignments/s1/swwjzp.align',
+     'data/alignments/s1/swwp2n.align',
+     'data/alignments/s1/swwp3s.align',
+     'data/alignments/s1/swwp4p.align',
+     'data/alignments/s1/swwp5a.align',
+     'data/alignments/s1/swwv6n.align',
+     ...]
+
+    def load_video(path:str) -> List[float]: 
+
+        capture = cv2.VideoCapture(path)
+        frames = []
+        for _ in range(int(capture.get(cv2.CAP_PROP_FRAME_COUNT))): 
+            ret, frame = capture.read()
+            frame = tf.image.rgb_to_grayscale(frame)
+            frames.append(frame[190:236,80:220,:])
+        capture.release()
+        
+        mean = tf.math.reduce_mean(frames)
+        std = tf.math.reduce_std(tf.cast(frames, tf.float32))
+        return tf.cast((frames - mean), tf.float32) / std
+
+    full_vocabulary = [x for x in "abcdefghijklmnopqrstuvwxyz'?!123456789 "]
+
+    char_to_number = tf.keras.layers.StringLookup(vocabulary=full_vocabulary, oov_token="")
+    number_to_char = tf.keras.layers.StringLookup(
+        vocabulary = char_to_number.get_vocabulary(), oov_token="", invert=True
+    )
+
+    print(
+        f"The vocabulary is: {char_to_number.get_vocabulary()} "
+        f"(size ={char_to_number.vocabulary_size()})"
+    )
+
+    The vocabulary is: ['', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', "'", '?', '!', '1', '2', '3', '4', '5', '6', '7', '8', '9', ' '] (size =40)
+
+    char_to_number.get_vocabulary()
+
+    ['',
+     'a',
+     'b',
+     'c',
+     'd',
+     'e',
+     'f',
+     'g',
+     'h',
+     'i',
+     'j',
+     'k',
+     'l',
+     'm',
+     'n',
+     'o',
+     'p',
+     'q',
+     'r',
+     's',
+     't',
+     'u',
+     'v',
+     'w',
+     'x',
+     'y',
+     'z',
+     "'",
+     '?',
+     '!',
+     '1',
+     '2',
+     '3',
+     '4',
+     '5',
+     '6',
+     '7',
+     '8',
+     '9',
+     ' ']
+
+    char_to_number(['n','i','c','k'])
+
+    <tf.Tensor: shape=(4,), dtype=int64, numpy=array([14,  9,  3, 11], dtype=int64)>
+
+    number_to_char([14,  9,  3, 11])
+
+    <tf.Tensor: shape=(4,), dtype=string, numpy=array([b'n', b'i', b'c', b'k'], dtype=object)>
+
+    def ld_alignments(path:str) -> List[str]: 
+        with open(path, 'r') as f: 
+            lines = f.readlines() 
+        tokens = []
+        for line in lines:
+            line = line.split()
+            if line[2] != 'sil': 
+                tokens = [*tokens,' ',line[2]]
+        return char_to_number(tf.reshape(tf.strings.unicode_split(tokens, input_encoding='UTF-8'), (-1)))[1:]
+
+    def ld_data(path: str): 
+        path = bytes.decode(path.numpy())
+        #file_name = path.split('/')[-1].split('.')[0]
+        # File name splitting for windows
+        file_name = path.split('\\')[-1].split('.')[0]
+        video_path = os.path.join('data','s1',f'{file_name}.mpg')
+        alignment_path = os.path.join('data','alignments','s1',f'{file_name}.align')
+        frames = load_video(video_path) 
+        alignments = ld_alignments(alignment_path)
+        
+        return frames, alignments
+
+    test_path = '.\\data\\s1\\bbal6n.mpg'
+
+    tf.convert_to_tensor(test_path).numpy().decode('utf-8').split('\\')[-1].split('.')[0]
+
+    'bbal6n'
+
+    frames, alignments = ld_data(tf.convert_to_tensor(test_path))
+
+    plt.imshow(frames[40])
+
+    <matplotlib.image.AxesImage at 0x1b2eade0b80>
+
+[]
+
+    alignments
+
+    <tf.Tensor: shape=(21,), dtype=int64, numpy=
+    array([ 2,  9, 14, 39,  2, 12, 21,  5, 39,  1, 20, 39, 12, 39, 19,  9, 24,
+           39, 14, 15, 23], dtype=int64)>
+
+    tf.strings.reduce_join([bytes.decode(x) for x in number_to_char(alignments.numpy()).numpy()])
+
+    <tf.Tensor: shape=(), dtype=string, numpy=b'bin blue at l six now'>
+
+    def mappable_function(path:str) ->List[str]:
+        result = tf.py_function(ld_data, [path], (tf.float32, tf.int64))
+        return result
+
+2. Create Data Pipeline
+
+    from matplotlib import pyplot as plt
+
+    data_take = tf.data.Dataset.list_files('./data/s1/*.mpg')
+    data_take = data_take.shuffle(500, reshuffle_each_iteration=False)
+    data_take = data_take.map(mappable_function)
+    data_take = data_take.padded_batch(2, padded_shapes=([75,None,None,None],[40]))
+    data_take = data_take.prefetch(tf.data.AUTOTUNE)
+    # Added for split 
+    train = data_take.take(450)
+    test = data_take.skip(450)
+
+    len(test)
+
+    50
+
+    frames, alignments = data_take.as_numpy_iterator().next()
+
+    len(frames)
+
+    2
+
+    sample = data_take.as_numpy_iterator()
+
+    value = sample.next(); value[0]
+
+    array([[[[[ 1.6235683 ],
+              [ 1.5529784 ],
+              [ 1.5176834 ],
+              ...,
+              [ 0.49412948],
+              [ 0.5294244 ],
+              [ 0.5294244 ]],
+
+             [[ 1.6235683 ],
+              [ 1.5529784 ],
+              [ 1.4823884 ],
+              ...,
+              [ 0.49412948],
+              [ 0.5294244 ],
+              [ 0.5294244 ]],
+
+             [[ 1.4470935 ],
+              [ 1.4470935 ],
+              [ 1.4823884 ],
+              ...,
+              [ 0.49412948],
+              [ 0.49412948],
+              [ 0.49412948]],
+
+             ...,
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.21176977],
+              [ 0.21176977],
+              [ 0.21176977]],
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.17647481],
+              [ 0.17647481],
+              [ 0.17647481]],
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.17647481],
+              [ 0.17647481],
+              [ 0.17647481]]],
+
+
+            [[[ 1.5882733 ],
+              [ 1.5882733 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.42353955],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.4823884 ],
+              [ 1.5882733 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.42353955],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.4823884 ],
+              [ 1.4823884 ],
+              [ 1.4823884 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             ...,
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.1294388 ],
+              ...,
+              [ 0.21176977],
+              [ 0.21176977],
+              [ 0.21176977]],
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.17647481],
+              [ 0.17647481],
+              [ 0.17647481]],
+
+             [[ 1.0941439 ],
+              [ 1.0588489 ],
+              [ 1.0588489 ],
+              ...,
+              [ 0.17647481],
+              [ 0.17647481],
+              [ 0.17647481]]],
+
+
+            [[[ 1.5529784 ],
+              [ 1.5529784 ],
+              [ 1.5882733 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.4470935 ],
+              [ 1.5529784 ],
+              [ 1.5882733 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.5529784 ],
+              [ 1.5529784 ],
+              [ 1.4823884 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             ...,
+
+             [[ 1.1647338 ],
+              [ 1.1647338 ],
+              [ 1.1647338 ],
+              ...,
+              [ 0.17647481],
+              [ 0.17647481],
+              [ 0.14117984]],
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.1294388 ],
+              ...,
+              [ 0.17647481],
+              [ 0.14117984],
+              [ 0.14117984]],
+
+             [[ 1.1294388 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.07058992]]],
+
+
+            ...,
+
+
+            [[[ 1.5882733 ],
+              [ 1.5529784 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.5529784 ],
+              [ 1.5529784 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.5882733 ],
+              [ 1.5882733 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.45883453],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             ...,
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.14117984]],
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.10588489]],
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.10588489],
+              [ 0.10588489]]],
+
+
+            [[[ 1.5529784 ],
+              [ 1.4823884 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.42353955],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.5529784 ],
+              [ 1.4470935 ],
+              [ 1.4470935 ],
+              ...,
+              [ 0.42353955],
+              [ 0.45883453],
+              [ 0.45883453]],
+
+             [[ 1.5882733 ],
+              [ 1.5882733 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.42353955],
+              [ 0.42353955],
+              [ 0.42353955]],
+
+             ...,
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.14117984]],
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.14117984]],
+
+             [[ 1.0941439 ],
+              [ 1.0941439 ],
+              [ 1.0941439 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.10588489]]],
+
+
+            [[[ 1.5882733 ],
+              [ 1.4823884 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.35294962],
+              [ 0.42353955],
+              [ 0.42353955]],
+
+             [[ 1.5882733 ],
+              [ 1.4470935 ],
+              [ 1.4470935 ],
+              ...,
+              [ 0.35294962],
+              [ 0.42353955],
+              [ 0.42353955]],
+
+             [[ 1.5882733 ],
+              [ 1.5882733 ],
+              [ 1.5529784 ],
+              ...,
+              [ 0.45883453],
+              [ 0.42353955],
+              [ 0.42353955]],
+
+             ...,
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.1647338 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.14117984]],
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.1294388 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.14117984]],
+
+             [[ 1.1294388 ],
+              [ 1.1294388 ],
+              [ 1.1294388 ],
+              ...,
+              [ 0.14117984],
+              [ 0.14117984],
+              [ 0.10588489]]]],
+
+
+
+           [[[[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3003433 ],
+              ...,
+              [ 9.496447  ],
+              [10.008702  ],
+              [ 0.07880868]],
+
+             [[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3003433 ],
+              ...,
+              [ 9.575255  ],
+              [10.008702  ],
+              [ 9.969298  ]],
+
+             [[ 1.3003433 ],
+              [ 1.3003433 ],
+              [ 1.3003433 ],
+              ...,
+              [ 0.03940434],
+              [ 0.07880868],
+              [ 0.07880868]],
+
+             ...,
+
+             [[ 0.9062998 ],
+              [ 0.9062998 ],
+              [ 0.9062998 ],
+              ...,
+              [ 9.929894  ],
+              [ 9.89049   ],
+              [ 9.89049   ]],
+
+             [[ 0.9062998 ],
+              [ 0.9062998 ],
+              [ 0.9062998 ],
+              ...,
+              [ 9.89049   ],
+              [ 9.929894  ],
+              [ 9.929894  ]],
+
+             [[ 0.9062998 ],
+              [ 0.9062998 ],
+              [ 0.9062998 ],
+              ...,
+              [ 9.89049   ],
+              [ 9.929894  ],
+              [ 9.929894  ]]],
+
+
+            [[[ 1.4579606 ],
+              [ 1.4579606 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.732872  ],
+              [10.048107  ],
+              [ 0.15761736]],
+
+             [[ 1.4579606 ],
+              [ 1.4579606 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.614659  ],
+              [ 0.        ],
+              [ 0.03940434]],
+
+             [[ 1.3003433 ],
+              [ 1.3003433 ],
+              [ 1.3003433 ],
+              ...,
+              [10.048107  ],
+              [ 0.        ],
+              [ 0.        ]],
+
+             ...,
+
+             [[ 0.8668955 ],
+              [ 0.8668955 ],
+              [ 0.8668955 ],
+              ...,
+              [ 9.969298  ],
+              [ 9.929894  ],
+              [ 9.929894  ]],
+
+             [[ 0.8668955 ],
+              [ 0.8668955 ],
+              [ 0.8668955 ],
+              ...,
+              [ 9.929894  ],
+              [ 9.929894  ],
+              [ 9.929894  ]],
+
+             [[ 0.8668955 ],
+              [ 0.8668955 ],
+              [ 0.8668955 ],
+              ...,
+              [ 9.929894  ],
+              [ 9.929894  ],
+              [ 9.929894  ]]],
+
+
+            [[[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3397475 ],
+              ...,
+              [ 9.693468  ],
+              [ 0.        ],
+              [ 0.15761736]],
+
+             [[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3397475 ],
+              ...,
+              [ 9.654063  ],
+              [ 0.        ],
+              [ 0.03940434]],
+
+             [[ 1.3003433 ],
+              [ 1.3003433 ],
+              [ 1.3003433 ],
+              ...,
+              [10.048107  ],
+              [ 0.        ],
+              [ 0.        ]],
+
+             ...,
+
+             [[ 0.9062998 ],
+              [ 0.9062998 ],
+              [ 0.9062998 ],
+              ...,
+              [ 9.969298  ],
+              [ 9.929894  ],
+              [ 9.929894  ]],
+
+             [[ 0.9062998 ],
+              [ 0.9062998 ],
+              [ 0.9062998 ],
+              ...,
+              [ 9.89049   ],
+              [ 9.929894  ],
+              [ 9.929894  ]],
+
+             [[ 0.9062998 ],
+              [ 0.9062998 ],
+              [ 0.9062998 ],
+              ...,
+              [ 9.89049   ],
+              [ 9.929894  ],
+              [ 9.929894  ]]],
+
+
+            ...,
+
+
+            [[[ 1.4185563 ],
+              [ 1.4185563 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.457042  ],
+              [ 9.811681  ],
+              [ 9.811681  ]],
+
+             [[ 1.4185563 ],
+              [ 1.4185563 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.417638  ],
+              [ 9.969298  ],
+              [ 9.811681  ]],
+
+             [[ 1.3397475 ],
+              [ 1.3397475 ],
+              [ 1.3397475 ],
+              ...,
+              [ 9.929894  ],
+              [10.048107  ],
+              [10.048107  ]],
+
+             ...,
+
+             [[ 0.94570416],
+              [ 0.94570416],
+              [ 0.9062998 ],
+              ...,
+              [10.008702  ],
+              [ 9.969298  ],
+              [ 9.969298  ]],
+
+             [[ 0.94570416],
+              [ 0.94570416],
+              [ 0.9062998 ],
+              ...,
+              [ 9.929894  ],
+              [ 9.969298  ],
+              [ 9.929894  ]],
+
+             [[ 0.94570416],
+              [ 0.94570416],
+              [ 0.9062998 ],
+              ...,
+              [ 9.929894  ],
+              [ 9.969298  ],
+              [ 9.929894  ]]],
+
+
+            [[[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.299424  ],
+              [ 9.772277  ],
+              [ 9.851086  ]],
+
+             [[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.299424  ],
+              [ 9.89049   ],
+              [ 9.929894  ]],
+
+             [[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3791519 ],
+              ...,
+              [10.008702  ],
+              [ 0.03940434],
+              [10.048107  ]],
+
+             ...,
+
+             [[ 0.98510855],
+              [ 0.98510855],
+              [ 0.94570416],
+              ...,
+              [10.008702  ],
+              [ 9.969298  ],
+              [ 9.969298  ]],
+
+             [[ 0.98510855],
+              [ 0.98510855],
+              [ 0.94570416],
+              ...,
+              [ 9.969298  ],
+              [ 9.969298  ],
+              [ 9.929894  ]],
+
+             [[ 0.98510855],
+              [ 0.98510855],
+              [ 0.94570416],
+              ...,
+              [ 9.929894  ],
+              [ 9.929894  ],
+              [ 9.851086  ]]],
+
+
+            [[[ 1.4579606 ],
+              [ 1.4579606 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.26002   ],
+              [ 9.851086  ],
+              [ 9.929894  ]],
+
+             [[ 1.4579606 ],
+              [ 1.4579606 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.220615  ],
+              [10.048107  ],
+              [10.048107  ]],
+
+             [[ 1.3791519 ],
+              [ 1.3791519 ],
+              [ 1.3791519 ],
+              ...,
+              [ 9.969298  ],
+              [ 0.        ],
+              [10.048107  ]],
+
+             ...,
+
+             [[ 0.98510855],
+              [ 0.98510855],
+              [ 0.94570416],
+              ...,
+              [10.008702  ],
+              [10.008702  ],
+              [ 9.89049   ]],
+
+             [[ 0.98510855],
+              [ 0.98510855],
+              [ 0.94570416],
+              ...,
+              [10.048107  ],
+              [ 9.969298  ],
+              [ 9.89049   ]],
+
+             [[ 0.98510855],
+              [ 0.98510855],
+              [ 0.94570416],
+              ...,
+              [ 9.969298  ],
+              [ 9.929894  ],
+              [ 9.89049   ]]]]], dtype=float32)
+
+    imageio.mimsave('./animation.gif', value[0][0], fps=10)
+
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+    Lossy conversion from float32 to uint8. Range [0.0, 9.000215530395508]. Convert image to uint8 prior to saving to suppress this warning.
+
+    # 0:videos, 0: 1st video out of the batch,  0: return the first frame in the video 
+    plt.imshow(value[0][0][35])
+
+    <matplotlib.image.AxesImage at 0x1b2eb1a0fd0>
+
+[]
+
+    tf.strings.reduce_join([number_to_char(word) for word in value[1][0]])
+
+    <tf.Tensor: shape=(), dtype=string, numpy=b'lay white by z six please'>
+
+3. Design the Deep Neural Network
+
+    from tensorflow.keras.models import Sequential 
+    from tensorflow.keras.layers import Conv3D, LSTM, Dense, Dropout, Bidirectional, MaxPool3D, Activation, Reshape, SpatialDropout3D, BatchNormalization, TimeDistributed, Flatten
+    from tensorflow.keras.optimizers import Adam
+    from tensorflow.keras.callbacks import ModelCheckpoint, LearningRateScheduler
+
+    data_take.as_numpy_iterator().next()[0][0].shape
+
+    (75, 46, 140, 1)
+
+    model = Sequential()
+    model.add(Conv3D(128, 3, input_shape=(75,46,140,1), padding='same'))
+    model.add(Activation('relu'))
+    model.add(MaxPool3D((1,2,2)))
+
+    model.add(Conv3D(256, 3, padding='same'))
+    model.add(Activation('relu'))
+    model.add(MaxPool3D((1,2,2)))
+
+    model.add(Conv3D(75, 3, padding='same'))
+    model.add(Activation('relu'))
+    model.add(MaxPool3D((1,2,2)))
+
+    model.add(TimeDistributed(Flatten()))
+
+    model.add(Bidirectional(LSTM(128, kernel_initializer='Orthogonal', return_sequences=True)))
+    model.add(Dropout(.5))
+
+    model.add(Bidirectional(LSTM(128, kernel_initializer='Orthogonal', return_sequences=True)))
+    model.add(Dropout(.5))
+
+    model.add(Dense(char_to_number.vocabulary_size()+1, kernel_initializer='he_normal', activation='softmax'))
+
+    model.summary()
+
+    Model: "sequential_1"
+    _________________________________________________________________
+     Layer (type)                Output Shape              Param #   
+    =================================================================
+     conv3d_3 (Conv3D)           (None, 75, 46, 140, 128)  3584      
+                                                                     
+     activation_3 (Activation)   (None, 75, 46, 140, 128)  0         
+                                                                     
+     max_pooling3d_3 (MaxPooling  (None, 75, 23, 70, 128)  0         
+     3D)                                                             
+                                                                     
+     conv3d_4 (Conv3D)           (None, 75, 23, 70, 256)   884992    
+                                                                     
+     activation_4 (Activation)   (None, 75, 23, 70, 256)   0         
+                                                                     
+     max_pooling3d_4 (MaxPooling  (None, 75, 11, 35, 256)  0         
+     3D)                                                             
+                                                                     
+     conv3d_5 (Conv3D)           (None, 75, 11, 35, 75)    518475    
+                                                                     
+     activation_5 (Activation)   (None, 75, 11, 35, 75)    0         
+                                                                     
+     max_pooling3d_5 (MaxPooling  (None, 75, 5, 17, 75)    0         
+     3D)                                                             
+                                                                     
+     time_distributed_1 (TimeDis  (None, 75, 6375)         0         
+     tributed)                                                       
+                                                                     
+     bidirectional_2 (Bidirectio  (None, 75, 256)          6660096   
+     nal)                                                            
+                                                                     
+     dropout_2 (Dropout)         (None, 75, 256)           0         
+                                                                     
+     bidirectional_3 (Bidirectio  (None, 75, 256)          394240    
+     nal)                                                            
+                                                                     
+     dropout_3 (Dropout)         (None, 75, 256)           0         
+                                                                     
+     dense (Dense)               (None, 75, 41)            10537     
+                                                                     
+    =================================================================
+    Total params: 8,471,924
+    Trainable params: 8,471,924
+    Non-trainable params: 0
+    _________________________________________________________________
+
+    5*17*75
+
+    6375
+
+    predictor = model.predict(value[0])
+
+    1/1 [==============================] - 3s 3s/step
+
+    tf.strings.reduce_join([number_to_char(x) for x in tf.argmax(predictor[0],axis=1)])
+
+    <tf.Tensor: shape=(), dtype=string, numpy=b'ggggggggggggggg333333333333333333333333333333333333333333ooooooooooooooooo3'>
+
+    tf.strings.reduce_join([number_to_char(tf.argmax(x)) for x in predictor[0]])
+
+    <tf.Tensor: shape=(), dtype=string, numpy=b'ggggggggggggggg333333333333333333333333333333333333333333ooooooooooooooooo3'>
+
+    model.input_shape
+
+    (None, 75, 46, 140, 1)
+
+    model.output_shape
+
+    (None, 75, 41)
+
+4. Setup Training Options and Train
+
+    def time_scheduler(epoch, lr):
+        if epoch < 30:
+            return lr
+        else:
+            return lr * tf.math.exp(-0.1)
+
+    def CTCLoss(y_true, y_pred):
+        batch_len = tf.cast(tf.shape(y_true)[0], dtype="int64")
+        input_length = tf.cast(tf.shape(y_pred)[1], dtype="int64")
+        label_length = tf.cast(tf.shape(y_true)[1], dtype="int64")
+
+        input_length = input_length * tf.ones(shape=(batch_len, 1), dtype="int64")
+        label_length = label_length * tf.ones(shape=(batch_len, 1), dtype="int64")
+
+        loss = tf.keras.backend.ctc_batch_cost(y_true, y_pred, input_length, label_length)
+        return loss
+
+    class ProduceExample(tf.keras.callbacks.Callback): 
+        def __init__(self, dataset) -> None: 
+            self.dataset = dataset.as_numpy_iterator()
+        
+        def on_epoch_end(self, epoch, logs=None) -> None:
+            data_take = self.dataset.next()
+            predictor = self.model.predict(data_take[0])
+            decoded = tf.keras.backend.ctc_decode(predictor, [75,75], greedy=False)[0][0].numpy()
+            for x in range(len(yhat)):           
+                print('Original:', tf.strings.reduce_join(number_to_char(data_take[1][x])).numpy().decode('utf-8'))
+                print('Prediction:', tf.strings.reduce_join(number_to_char(decoded[x])).numpy().decode('utf-8'))
+                print('~'*100)
+
+    model.compile(optimizer=Adam(learning_rate=0.0001), loss=CTCLoss)
+
+    checkpoint_callback = ModelCheckpoint(os.path.join('models','checkpoint'), monitor='loss', save_weights_only=True) 
+
+    schedule_callback = LearningRateScheduler(time_scheduler)
+
+    example_callback = ProduceExample(test)
+
+    model.fit(train, validation_data=test, epochs=100, callbacks=[checkpoint_callback, schedule_callback, example_callback])
+
+5. Make a Prediction
+
+    url = 'https://drive.google.com/uc?id=1vWscXs4Vt0a_1IH1-ct2TCgXAZT-N3_Y'
+    output = 'checkpoints.zip'
+    gdown.download(url, output, quiet=False)
+    gdown.extractall('checkpoints.zip', 'models')
+
+    Downloading...
+    From (uriginal): https://drive.google.com/uc?id=1vWscXs4Vt0a_1IH1-ct2TCgXAZT-N3_Y
+    From (redirected): https://drive.google.com/uc?id=1vWscXs4Vt0a_1IH1-ct2TCgXAZT-N3_Y&confirm=t&uuid=a25f7f19-f42e-47ff-adb4-f111f540323b
+    To: C:\Users\DELL\Downloads\LipNet-main\checkpoints.zip
+    100%|██████████| 94.5M/94.5M [01:11<00:00, 1.32MB/s]
+
+    ['models\\checkpoint.index',
+     'models\\__MACOSX/._checkpoint.index',
+     'models\\checkpoint.data-00000-of-00001',
+     'models\\__MACOSX/._checkpoint.data-00000-of-00001',
+     'models\\checkpoint',
+     'models\\__MACOSX/._checkpoint']
+
+    model.load_weights('models/checkpoint')
+
+
+
+    test_data = test.as_numpy_iterator()
+
+    sample = test_data.next()
+
+    predictor = model.predict(sample[0])
+
+    1/1 [==============================] - 4s 4s/step
+
+    print('~'*100, 'REAL TEXT')
+    [tf.strings.reduce_join([number_to_char(word) for word in sentence]) for sentence in sample[1]]
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ REAL TEXT
+
+    [<tf.Tensor: shape=(), dtype=string, numpy=b'place red with k one again'>,
+     <tf.Tensor: shape=(), dtype=string, numpy=b'place blue by i nine soon'>]
+
+    decoded = tf.keras.backend.ctc_decode(predictor, input_length=[75,75], greedy=True)[0][0].numpy()
+
+    print('~'*100, 'PREDICTIONS')
+    [tf.strings.reduce_join([number_to_char(word) for word in sentence]) for sentence in decoded]
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PREDICTIONS
+
+    [<tf.Tensor: shape=(), dtype=string, numpy=b'place red with k one again'>,
+     <tf.Tensor: shape=(), dtype=string, numpy=b'place blue by i nine soon'>]
+
+    from sklearn.metrics import accuracy_score
+
+    # Assuming you have predicted labels (y_pred) and true labels (y_true)
+    # y_pred: predicted labels by the model
+    # y_true: true labels (ground truth)
+
+    # Calculate accuracy
+    accuracy = accuracy_score(CTC_loss)
+
+    # Print accuracy
+    print("Accuracy: {:.2f}%".format(accuracy * 100))
+
+
+
+Test on a Video
+
+    sample_value = ld_data(tf.convert_to_tensor('.\\data\\s1\\bras9a.mpg'))
+
+    print('~'*100, 'REAL TEXT')
+    [tf.strings.reduce_join([number_to_char(word) for word in sentence]) for sentence in [sample_value[1]]]
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ REAL TEXT
+
+    [<tf.Tensor: shape=(), dtype=string, numpy=b'bin red at s nine again'>]
+
+    predictor = model.predict(tf.expand_dims(sample_value[0], axis=0))
+
+    1/1 [==============================] - 1s 1s/step
+
+    decoded = tf.keras.backend.ctc_decode(predictor, input_length=[75], greedy=True)[0][0].numpy()
+
+    print('~'*100, 'PREDICTIONS')
+    [tf.strings.reduce_join([number_to_char(word) for word in sentence]) for sentence in decoded]
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PREDICTIONS
+
+    [<tf.Tensor: shape=(), dtype=string, numpy=b'bin red at s nine again'>]
